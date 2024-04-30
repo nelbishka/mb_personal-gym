@@ -33,7 +33,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
       setExercises(exercisesData)
     }
     fetchExercisesData();
-  }, [bodyPart])
+  }, [bodyPart, setExercises])
 
   return (
     <Box id='exercises' 
@@ -65,9 +65,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
             size='large'
           />
         )}
-
       </Stack>
-
     </Box>
   )
 }
